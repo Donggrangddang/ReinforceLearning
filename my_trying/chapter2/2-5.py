@@ -54,7 +54,7 @@ def sample_average(q_a, times=2000, epsilon=0.0, time_level=10000):
                         
             N_times[action] += 1
 
-        result_Q_a.append(sum(Q_a) / 10)
+        result_Q_a.append(Q_a)
 
     return result_Q_a
                 
